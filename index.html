@@ -7,6 +7,7 @@
   </head>
   <body>
     <h1>Welcome to the Jukebox App!</h1>
+    <h2>Listen to your local files</h2>
     <div id="playlist"></div>
     <div id="audio"></div>
     <div id="buttons">
@@ -15,10 +16,24 @@
       <button type="button" id="stop">Stop</button>
       <input type="file" id="upload" value="">
     </div>
+    <h2>Get tracks from SoundCloud</h2>
+    <div id="input-sc">
+      <p>Search by artist name, track name, or genre:</p>
+      <input type="text" id="search" placeholder="Type artist name, track, or genre">
+      <p>Or search a track by track ID:</p>
+      <input type="number" id="track-id" placeholder="Track Id">
+    </div>
+    <div id="buttons-sc">
+      <button type="button" id="play-sc">Play</button>
+      <button type="button" id="pause-sc">Pause</button>
+      <button type="button" id="stop-sc">Stop</button>
+    </div>
+    <div id="soundcloud"></div>
 
     <!-- SoundCloud -->
     <script src="https://connect.soundcloud.com/sdk/sdk-3.2.1.js"></script>
     <!-- JS Custom -->
+    <script src="js/config.js" type="text/javascript"></script>
     <script src="js/soundcloud.js" type="text/javascript"></script>
     <script src="js/script.js" type="text/javascript"></script>
   </body>
